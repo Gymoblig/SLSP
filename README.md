@@ -4,9 +4,9 @@
 
 Toto riešenie je súčasťou výberového konania na pozíciu **Test Automation Developer – brigádnik/brigádnička**.
 
-Cieľom úlohy je otestovať schopnosť vytvoriť jednoduchý automatizačný skript pomocou **Robot Framework** a knižnice **BrowserLibrary** alebo **SeleniumLibrary**.
+Cieľom úlohy je otestovať schopnosť vytvoriť jednoduchý automatizačný skript pomocou **Robot Framework** a knižnic **BrowserLibrary** alebo **SeleniumLibrary**.
 
-Vašou úlohou je vyriešiť časť **“Input Forms”** na stránke [www.rpachallenge.com](https://www.rpachallenge.com), kde robot načíta údaje z Excel súboru a následne ich zadá do formulára.
+Úlohou je vyriešiť časť **“Input Forms”** na stránke [www.rpachallenge.com](https://www.rpachallenge.com), kde robot načíta údeje z Excel súboru a následne ich zadá do formulára.
 
 ---
 
@@ -14,7 +14,7 @@ Vašou úlohou je vyriešiť časť **“Input Forms”** na stránke [www.rpach
 
 - [Robot Framework](https://robotframework.org/)
 - [RPA Framework](https://rpaframework.org/) (`RPA.Excel.Files`, `Browser`)
-- Excel súbor `challenge.xlsx` so vstupnými údajmi
+- Excel súbor `challenge.xlsx` so vstupnými údejmi
 
 ---
 
@@ -23,7 +23,7 @@ Vašou úlohou je vyriešiť časť **“Input Forms”** na stránke [www.rpach
 ```
 .
 ├── challenge.xlsx        # Excel s testovacími dátami
-├── robot.robot           # Hlavný automatizačný skript
+├── rpa_challenge.robot   # Hlavný automatizačný skript
 └── README.md             # Tento súbor
 ```
 
@@ -37,7 +37,6 @@ Na spustenie tohto skriptu je potrebné mať nainštalovaný **Python**, **Robot
 pip install robotframework
 pip install rpaframework
 ```
-
 
 Treba dať run na **rfbrowser**:
 ```bash
@@ -56,9 +55,9 @@ pipenv run robot rpa_challenge.robot
 
 ## 📌 Priebeh skriptu
 
-1. Načíta sa Excel súbor `challenge.xlsx`.
-2. Otvorí sa prehliadač a stránka [rpachallenge.com](https://www.rpachallenge.com).
-3. Klikne sa na tlačidlo **Start**.
+1. Načíta sa Excel súbor `challenge.xlsx` v optimalizovanom režime `read_only=True` – vďaka tomu je načítanie rýchlejšie.
+2. Otvorí sa prehliadač v `headless` režime pre vyššiu výkonnosť.
+3. Stránka [rpachallenge.com](https://www.rpachallenge.com) sa otvorí a klikne sa na tlačidlo **Start**.
 4. Pre každý riadok v tabuľke sa vyplní formulár:
    - First Name
    - Last Name
@@ -71,3 +70,13 @@ pipenv run robot rpa_challenge.robot
 6. Proces sa opakuje pre všetky riadky v Exceli.
 
 ---
+
+## ⚙️ Optimalizácie pre výkon
+
+- ✅ **`read_only=True`** pri otváraní Excelu znižuje čas načítania dát.
+- ✅ **`headless=True`** prehliadač beží na pozadí – bez GUI, čím sa zrýchľuje.
+- ✅ Použité `Set Strict Mode False` a `Set Browser Timeout 5s` pre zniženie čakania pri načítavaní prvkov.
+- ✅ Prehľadný a optimalizovaný `FOR` cyklus cez záznamy.
+
+Tieto zmeny zabezpečujú čo najrýchlejšie spracovanie údejov bez zbytočných prestojov.
+
