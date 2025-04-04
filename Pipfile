@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+rpaframework = "==30.0.0"
+robotframework-browser = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
