@@ -14,7 +14,7 @@ Cieľom úlohy je otestovať schopnosť vytvoriť jednoduchý automatizačný sk
 
 - [Robot Framework](https://robotframework.org/)
 - [RPA Framework](https://rpaframework.org/) (`RPA.Excel.Files`, `Browser`)
-- Excel súbor `challenge.xlsx` so vstupnými údejmi
+- Excel súbor `challenge.xlsx` so vstupnými údajmi
 
 ---
 
