@@ -1,826 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.5 on win32)" generated="2025-04-04T21:59:05.251533" rpa="true" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.5 on win32)" generated="2025-04-04T22:10:35.582496" rpa="true" schemaversion="5">
 <suite id="s1" name="Rpa Challenge" source="D:\SLSP\rpa_challenge.robot">
-<test id="s1-t1" name="Nacitanie z challenge.xlsx" line="9">
-<kw name="Open Workbook" owner="RPA.Excel.Files">
-<msg time="2025-04-04T21:59:05.807549" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001D8EC9D9E50&gt;</msg>
-<arg>D:\\SLSP/challenge.xlsx</arg>
-<doc>Open an existing Excel workbook.</doc>
-<status status="PASS" start="2025-04-04T21:59:05.748804" elapsed="0.058745"/>
-</kw>
-<kw name="Read Worksheet As Table" owner="RPA.Excel.Files">
-<msg time="2025-04-04T21:59:05.825663" level="INFO">Created table: Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
-<msg time="2025-04-04T21:59:05.826656" level="INFO">${challenge} = Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<test id="s1-t1" name="Nacitanie z challenge.xlsx" line="11">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-04T22:10:36.357514" level="INFO">${challenge} = [{'First Name': 'John', 'Last Name ': 'Smith', 'Company Name': 'IT Solutions', 'Role in Company': 'Analyst', 'Address': '98 North Road', 'Email': 'jsmith@itsolutions.co.uk', 'Phone Number': 4071654329...</msg>
 <var>${challenge}</var>
-<arg>header=True</arg>
-<doc>Read the contents of a worksheet into a Table container. Allows
-sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
-<status status="PASS" start="2025-04-04T21:59:05.808550" elapsed="0.018106"/>
-</kw>
-<kw name="Close Workbook" owner="RPA.Excel.Files">
-<msg time="2025-04-04T21:59:05.828189" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001D8EC9D9E50&gt;</msg>
-<doc>Close the active workbook.</doc>
-<status status="PASS" start="2025-04-04T21:59:05.827178" elapsed="0.001011"/>
+<arg>__import__('pandas').read_excel(r'''${FILE}''').to_dict(orient='records')</arg>
+<arg>modules=pandas</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-04T22:10:35.749628" elapsed="0.607886"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-04T21:59:05.831606" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\SLSP\\browser\\traces\\temp\\088c5ac4-7cd1-4280-8e3c-17da88e53525"}</msg>
-<msg time="2025-04-04T21:59:05.877307" level="INFO">Starting Browser process C:\Users\MATÚŠ\.virtualenvs\SLSP-jxrWAbBn\Lib\site-packages\Browser\wrapper\index.js using port 50443</msg>
-<msg time="2025-04-04T21:59:05.877307" level="INFO">Node startup parameters: ['node', 'C:\\Users\\MATÚŠ\\.virtualenvs\\SLSP-jxrWAbBn\\Lib\\site-packages\\Browser\\wrapper\\index.js', '50443']</msg>
-<msg time="2025-04-04T21:59:07.176766" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\SLSP\\browser\\traces\\temp\\088c5ac4-7cd1-4280-8e3c-17da88e53525"}</msg>
+<msg time="2025-04-04T22:10:36.360555" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\SLSP\\browser\\traces\\temp\\08356275-e4b9-4c32-ab75-645f0a4c2dc3"}</msg>
+<msg time="2025-04-04T22:10:36.403880" level="INFO">Starting Browser process C:\Users\MATÚŠ\.virtualenvs\SLSP-jxrWAbBn\Lib\site-packages\Browser\wrapper\index.js using port 50895</msg>
+<msg time="2025-04-04T22:10:36.403880" level="INFO">Node startup parameters: ['node', 'C:\\Users\\MATÚŠ\\.virtualenvs\\SLSP-jxrWAbBn\\Lib\\site-packages\\Browser\\wrapper\\index.js', '50895']</msg>
+<msg time="2025-04-04T22:10:37.580722" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\SLSP\\browser\\traces\\temp\\08356275-e4b9-4c32-ab75-645f0a4c2dc3"}</msg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-04T21:59:05.828189" elapsed="1.348577"/>
+<status status="PASS" start="2025-04-04T22:10:36.358522" elapsed="1.222707"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2025-04-04T22:10:37.587236" level="INFO">No context open.</msg>
+<arg>5s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-04-04T22:10:37.581229" elapsed="0.006007"/>
+</kw>
+<kw name="Set Strict Mode" owner="Browser">
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Controls library strict mode.</doc>
+<status status="PASS" start="2025-04-04T22:10:37.587236" elapsed="0.003512"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-04T21:59:08.658181" level="INFO">Successfully initialized new page object and opened url: https://www.rpachallenge.com</msg>
-<msg time="2025-04-04T21:59:08.658181" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-04-04T22:10:38.375566" level="INFO">Successfully initialized new page object and opened url: https://www.rpachallenge.com</msg>
+<msg time="2025-04-04T22:10:38.375566" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.rpachallenge.com</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-04T21:59:07.176766" elapsed="1.482412"/>
+<status status="PASS" start="2025-04-04T22:10:37.591761" elapsed="0.783805"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:08.663702" level="INFO">Clicks the element 'xpath=//button[text()='Start']'.</msg>
+<msg time="2025-04-04T22:10:38.377565" level="INFO">Clicks the element 'xpath=//button[text()='Start']'.</msg>
 <arg>xpath=//button[text()='Start']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.660685" elapsed="0.098588"/>
+<status status="PASS" start="2025-04-04T22:10:38.376561" elapsed="0.072764"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.765782" level="INFO">Fills the text 'John' in the given field.</msg>
+<msg time="2025-04-04T22:10:38.451349" level="INFO">Fills the text 'John' in the given field.</msg>
 <arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
 <arg>${row}[First Name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.763782" elapsed="0.034869"/>
+<status status="PASS" start="2025-04-04T22:10:38.449325" elapsed="0.021356"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.800160" level="INFO">Fills the text 'Smith' in the given field.</msg>
+<msg time="2025-04-04T22:10:38.471717" level="FAIL">Dictionary '${row}' has no key 'Last Name'.</msg>
 <arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
 <arg>${row}[Last Name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.798651" elapsed="0.021689"/>
+<status status="FAIL" start="2025-04-04T22:10:38.470681" elapsed="0.001036">Dictionary '${row}' has no key 'Last Name'.</status>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.822347" level="INFO">Fills the text 'jsmith@itsolutions.co.uk' in the given field.</msg>
 <arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
 <arg>${row}[Email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.821351" elapsed="0.028994"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.471717" elapsed="0.000000"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.852365" level="INFO">Fills the text 'Analyst' in the given field.</msg>
 <arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
 <arg>${row}[Role in Company]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.850345" elapsed="0.027360"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.471717" elapsed="0.000000"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.880209" level="INFO">Fills the text '98 North Road' in the given field.</msg>
 <arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
 <arg>${row}[Address]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.878703" elapsed="0.021634"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.472733" elapsed="0.000000"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.904347" level="INFO">Fills the text 'IT Solutions' in the given field.</msg>
 <arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
 <arg>${row}[Company Name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.901346" elapsed="0.018559"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.472733" elapsed="0.000000"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.920991" level="INFO">Fills the text '40716543298' in the given field.</msg>
 <arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
 <arg>${row}[Phone Number]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.919905" elapsed="0.025345"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.472733" elapsed="0.000000"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:08.947776" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
 <arg>xpath=//input[@type='submit']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.946766" elapsed="0.033622"/>
+<status status="NOT RUN" start="2025-04-04T22:10:38.472733" elapsed="0.000000"/>
 </kw>
-<var name="${row}">{'First Name': 'John', 'Last Name': 'Smith', 'Company Name': 'IT Solutions', 'Role in Company': 'Analyst', 'Address': '98 North Road', 'Email': 'jsmith@itsolutions.co.uk', 'Phone Number': 40716543298}</var>
-<status status="PASS" start="2025-04-04T21:59:08.761778" elapsed="0.218610"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.981392" level="INFO">Fills the text 'Jane' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.980388" elapsed="0.013738"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:08.997642" level="INFO">Fills the text 'Dorsey' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:08.995125" elapsed="0.018075"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.015198" level="INFO">Fills the text 'jdorsey@mc.com' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.013200" elapsed="0.021024"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.035224" level="INFO">Fills the text 'Medical Engineer' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.034224" elapsed="0.016069"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.051297" level="INFO">Fills the text '11 Crown Street' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.050293" elapsed="0.020076"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.071378" level="INFO">Fills the text 'MediCare' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.070369" elapsed="0.014072"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.085438" level="INFO">Fills the text '40791345621' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.084441" elapsed="0.022173"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:09.108611" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.107613" elapsed="0.034480"/>
-</kw>
-<var name="${row}">{'First Name': 'Jane', 'Last Name': 'Dorsey', 'Company Name': 'MediCare', 'Role in Company': 'Medical Engineer', 'Address': '11 Crown Street', 'Email': 'jdorsey@mc.com', 'Phone Number': 40791345621}</var>
-<status status="PASS" start="2025-04-04T21:59:08.980388" elapsed="0.161705"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.143598" level="INFO">Fills the text 'Albert' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.143093" elapsed="0.011051"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.160174" level="INFO">Fills the text 'Kipling' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.155653" elapsed="0.026680"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.183331" level="INFO">Fills the text 'kipling@waterfront.com' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.182333" elapsed="0.019176"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.204011" level="INFO">Fills the text 'Accountant' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.202509" elapsed="0.018724"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.225768" level="INFO">Fills the text '22 Guild Street' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.221233" elapsed="0.023393"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.245632" level="INFO">Fills the text 'Waterfront' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.244626" elapsed="0.018363"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.267019" level="INFO">Fills the text '40735416854' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.264497" elapsed="0.016574"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:09.282071" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.281071" elapsed="0.034074"/>
-</kw>
-<var name="${row}">{'First Name': 'Albert', 'Last Name': 'Kipling', 'Company Name': 'Waterfront', 'Role in Company': 'Accountant', 'Address': '22 Guild Street', 'Email': 'kipling@waterfront.com', 'Phone Number': 4073541...</var>
-<status status="PASS" start="2025-04-04T21:59:09.142093" elapsed="0.174558"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.317657" level="INFO">Fills the text 'Michael' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.316651" elapsed="0.019154"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.337804" level="INFO">Fills the text 'Robertson' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.336806" elapsed="0.027773"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.367724" level="INFO">Fills the text 'mrobertson@mc.com' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.365579" elapsed="0.016685"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.384264" level="INFO">Fills the text 'IT Specialist' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.382264" elapsed="0.019772"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.404044" level="INFO">Fills the text '17 Farburn Terrace' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.403044" elapsed="0.015922"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.419967" level="INFO">Fills the text 'MediCare' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.418966" elapsed="0.021284"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.441254" level="INFO">Fills the text '40733652145' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.440250" elapsed="0.015571"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:09.461351" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.456834" elapsed="0.038516"/>
-</kw>
-<var name="${row}">{'First Name': 'Michael', 'Last Name': 'Robertson', 'Company Name': 'MediCare', 'Role in Company': 'IT Specialist', 'Address': '17 Farburn Terrace', 'Email': 'mrobertson@mc.com', 'Phone Number': 40733...</var>
-<status status="PASS" start="2025-04-04T21:59:09.316651" elapsed="0.178699"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.497871" level="INFO">Fills the text 'Doug' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.496863" elapsed="0.016055"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.515919" level="INFO">Fills the text 'Derrick' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.513918" elapsed="0.021208"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.538636" level="INFO">Fills the text 'dderrick@timepath.co.uk' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.536630" elapsed="0.017747"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.559894" level="INFO">Fills the text 'Analyst' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.555884" elapsed="0.022114"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.579996" level="INFO">Fills the text '99 Shire Oak Road' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.577998" elapsed="0.027271"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.607779" level="INFO">Fills the text 'Timepath Inc.' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.605269" elapsed="0.020326"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.630505" level="INFO">Fills the text '40799885412' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.626595" elapsed="0.020200"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:09.647804" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.646795" elapsed="0.037326"/>
-</kw>
-<var name="${row}">{'First Name': 'Doug', 'Last Name': 'Derrick', 'Company Name': 'Timepath Inc.', 'Role in Company': 'Analyst', 'Address': '99 Shire Oak Road', 'Email': 'dderrick@timepath.co.uk', 'Phone Number': 407998...</var>
-<status status="PASS" start="2025-04-04T21:59:09.496863" elapsed="0.187258"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.685121" level="INFO">Fills the text 'Jessie' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.684121" elapsed="0.025871"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.712144" level="INFO">Fills the text 'Marlowe' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.709992" elapsed="0.024252"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.737157" level="INFO">Fills the text 'jmarlowe@aperture.us' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.734244" elapsed="0.018519"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.753764" level="INFO">Fills the text 'Scientist' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.752763" elapsed="0.019294"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.774060" level="INFO">Fills the text '27 Cheshire Street' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.772057" elapsed="0.017065"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.794168" level="INFO">Fills the text 'Aperture Inc.' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.790134" elapsed="0.028610"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.821272" level="INFO">Fills the text '40733154268' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.820261" elapsed="0.028406"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:09.851180" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.848667" elapsed="0.034377"/>
-</kw>
-<var name="${row}">{'First Name': 'Jessie', 'Last Name': 'Marlowe', 'Company Name': 'Aperture Inc.', 'Role in Company': 'Scientist', 'Address': '27 Cheshire Street', 'Email': 'jmarlowe@aperture.us', 'Phone Number': 4073...</var>
-<status status="PASS" start="2025-04-04T21:59:09.684121" elapsed="0.198923"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.885050" level="INFO">Fills the text 'Stan' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.884046" elapsed="0.016036"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.902089" level="INFO">Fills the text 'Hamm' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.900082" elapsed="0.016696"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.918784" level="INFO">Fills the text 'shamm@sugarwell.org' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.916778" elapsed="0.020868"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.938652" level="INFO">Fills the text 'Advisor' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.938652" elapsed="0.015059"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.954722" level="INFO">Fills the text '10 Dam Road' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.953711" elapsed="0.022129"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.977841" level="INFO">Fills the text 'Sugarwell' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.975840" elapsed="0.018059"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:09.998601" level="INFO">Fills the text '40712462257' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:09.995073" elapsed="0.020123"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:10.016702" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.015196" elapsed="0.032402"/>
-</kw>
-<var name="${row}">{'First Name': 'Stan', 'Last Name': 'Hamm', 'Company Name': 'Sugarwell', 'Role in Company': 'Advisor', 'Address': '10 Dam Road', 'Email': 'shamm@sugarwell.org', 'Phone Number': 40712462257}</var>
-<status status="PASS" start="2025-04-04T21:59:09.883044" elapsed="0.164554"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.048592" level="INFO">Fills the text 'Michelle' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.047598" elapsed="0.017065"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.067668" level="INFO">Fills the text 'Norton' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.065661" elapsed="0.014565"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.081237" level="INFO">Fills the text 'mnorton@aperture.us' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.080226" elapsed="0.019667"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.101404" level="INFO">Fills the text 'Scientist' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.100398" elapsed="0.015576"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.117983" level="INFO">Fills the text '13 White Rabbit Street' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.115974" elapsed="0.022620"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.140101" level="INFO">Fills the text 'Aperture Inc.' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.138594" elapsed="0.014583"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.155175" level="INFO">Fills the text '40731254562' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.154175" elapsed="0.016102"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:10.172293" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.171289" elapsed="0.035338"/>
-</kw>
-<var name="${row}">{'First Name': 'Michelle', 'Last Name': 'Norton', 'Company Name': 'Aperture Inc.', 'Role in Company': 'Scientist', 'Address': '13 White Rabbit Street', 'Email': 'mnorton@aperture.us', 'Phone Number': ...</var>
-<status status="PASS" start="2025-04-04T21:59:10.047598" elapsed="0.159029"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.207626" level="INFO">Fills the text 'Stacy' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.207626" elapsed="0.009040"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.218963" level="INFO">Fills the text 'Shelby' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.217966" elapsed="0.022204"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.241318" level="INFO">Fills the text 'sshelby@techdev.com' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.240170" elapsed="0.016225"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.260933" level="INFO">Fills the text 'HR Manager' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.257405" elapsed="0.019564"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.278978" level="INFO">Fills the text '19 Pineapple Boulevard' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.277976" elapsed="0.016560"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.298047" level="INFO">Fills the text 'TechDev' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.295542" elapsed="0.016545"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.313095" level="INFO">Fills the text '40741785214' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.312087" elapsed="0.022586"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:10.335682" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.334673" elapsed="0.035239"/>
-</kw>
-<var name="${row}">{'First Name': 'Stacy', 'Last Name': 'Shelby', 'Company Name': 'TechDev', 'Role in Company': 'HR Manager', 'Address': '19 Pineapple Boulevard', 'Email': 'sshelby@techdev.com', 'Phone Number': 40741785...</var>
-<status status="PASS" start="2025-04-04T21:59:10.206627" elapsed="0.163285"/>
-</iter>
-<iter>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.371339" level="INFO">Fills the text 'Lara' in the given field.</msg>
-<arg>xpath=//label[contains(.,'First Name')]/following::input[1]</arg>
-<arg>${row}[First Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.369912" elapsed="0.011963"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.383871" level="INFO">Fills the text 'Palmer' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Last Name')]/following::input[1]</arg>
-<arg>${row}[Last Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.381875" elapsed="0.023109"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.406982" level="INFO">Fills the text 'lpalmer@timepath.co.uk' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Email')]/following::input[1]</arg>
-<arg>${row}[Email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.405987" elapsed="0.014549"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.425054" level="INFO">Fills the text 'Programmer' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Role in Company')]/following::input[1]</arg>
-<arg>${row}[Role in Company]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.421540" elapsed="0.023149"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.446689" level="INFO">Fills the text '87 Orange Street' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Address')]/following::input[1]</arg>
-<arg>${row}[Address]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.445690" elapsed="0.021172"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.468872" level="INFO">Fills the text 'Timepath Inc.' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Company Name')]/following::input[1]</arg>
-<arg>${row}[Company Name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.466862" elapsed="0.014370"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2025-04-04T21:59:10.483229" level="INFO">Fills the text '40731653845' in the given field.</msg>
-<arg>xpath=//label[contains(.,'Phone')]/following::input[1]</arg>
-<arg>${row}[Phone Number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.482231" elapsed="0.022136"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-04-04T21:59:10.506877" level="INFO">Clicks the element 'xpath=//input[@type='submit']'.</msg>
-<arg>xpath=//input[@type='submit']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-04T21:59:10.504367" elapsed="0.032330"/>
-</kw>
-<var name="${row}">{'First Name': 'Lara', 'Last Name': 'Palmer', 'Company Name': 'Timepath Inc.', 'Role in Company': 'Programmer', 'Address': '87 Orange Street', 'Email': 'lpalmer@timepath.co.uk', 'Phone Number': 407316...</var>
-<status status="PASS" start="2025-04-04T21:59:10.369912" elapsed="0.166785"/>
+<var name="${row}">{'First Name': 'John', 'Last Name ': 'Smith', 'Company Name': 'IT Solutions', 'Role in Company': 'Analyst', 'Address': '98 North Road', 'Email': 'jsmith@itsolutions.co.uk', 'Phone Number': 40716543298...</var>
+<status status="FAIL" start="2025-04-04T22:10:38.449325" elapsed="0.023408">Dictionary '${row}' has no key 'Last Name'.</status>
 </iter>
 <var>${row}</var>
 <value>@{challenge}</value>
-<status status="PASS" start="2025-04-04T21:59:08.759273" elapsed="1.777424"/>
+<status status="FAIL" start="2025-04-04T22:10:38.449325" elapsed="0.023408">Dictionary '${row}' has no key 'Last Name'.</status>
 </for>
-<msg time="2025-04-04T21:59:10.539201" level="INFO">Set timeout to: 10000</msg>
-<msg time="2025-04-04T21:59:10.550131" level="INFO">Switching context to context=9cddfd03-1280-41df-942d-c5ea25149374 in CURRENT</msg>
-<msg time="2025-04-04T21:59:10.561182" level="INFO">Successfully changed active context: context=9cddfd03-1280-41df-942d-c5ea25149374</msg>
-<msg time="2025-04-04T21:59:10.605016" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-04-04T21:59:05.747805" elapsed="4.789891"/>
+<msg time="2025-04-04T22:10:38.484757" level="INFO">Switching context to context=11915da6-975e-4fcd-a5bd-9006f1f677b5 in CURRENT</msg>
+<msg time="2025-04-04T22:10:38.498291" level="INFO">Successfully changed active context: context=11915da6-975e-4fcd-a5bd-9006f1f677b5</msg>
+<msg time="2025-04-04T22:10:38.505801" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-04T22:10:35.748629" elapsed="2.725094">Dictionary '${row}' has no key 'Last Name'.</status>
 </test>
-<status status="PASS" start="2025-04-04T21:59:05.254058" elapsed="5.353488"/>
+<status status="FAIL" start="2025-04-04T22:10:35.583500" elapsed="2.923818"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tasks</stat>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Rpa Challenge" id="s1" pass="1" fail="0" skip="0">Rpa Challenge</stat>
+<stat name="Rpa Challenge" id="s1" pass="0" fail="1" skip="0">Rpa Challenge</stat>
 </suite>
 </statistics>
 <errors>

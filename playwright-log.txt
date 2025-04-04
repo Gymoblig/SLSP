@@ -1,274 +1,37 @@
-{"level":30,"time":"2025-04-04T19:59:06.516Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Listening on 50443"}
-(node:12052) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-04T20:10:37.000Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Listening on 50895"}
+(node:1408) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-04-04T19:59:06.943Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-04-04T19:59:07.174Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
-{"level":30,"time":"2025-04-04T19:59:07.174Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-04-04T19:59:07.174Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-04-04T19:59:07.179Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-04-04T19:59:07.180Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-04T19:59:07.198Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active context"}
-{"level":30,"time":"2025-04-04T19:59:07.342Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Video path: undefined"}
-{"level":30,"time":"2025-04-04T19:59:07.342Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active page"}
-{"level":30,"time":"2025-04-04T19:59:08.653Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method newPage"}
-{"level":30,"time":"2025-04-04T19:59:08.668Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:08.668Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//button[text()='Start'] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.754Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:08.768Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.768Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.792Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.801Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.801Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.819Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.826Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.826Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.848Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.854Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.854Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.876Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.881Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.881Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.897Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.906Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.906Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.918Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.924Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.925Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.944Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.949Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:08.949Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.979Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:08.982Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:08.982Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:08.992Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.000Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.000Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.011Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.016Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.016Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.032Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.037Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.037Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.048Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.052Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.052Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.067Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.072Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.072Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.083Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.087Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.087Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.105Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.110Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.110Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.141Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.144Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.145Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.153Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.163Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.163Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.180Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.184Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.184Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.200Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.205Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.205Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.219Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.229Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.229Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.242Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.247Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.247Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.259Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.268Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.268Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.279Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.283Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.284Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.314Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.318Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.318Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.334Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.340Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.340Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.362Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.368Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.368Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.381Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.384Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.384Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.400Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.405Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.405Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.417Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.421Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.421Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.439Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.443Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.444Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.454Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.463Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.463Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.494Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.499Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.499Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.511Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.517Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.517Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.534Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.540Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.540Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.553Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.562Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.562Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.577Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.582Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.582Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.604Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.609Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.609Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.621Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.632Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.633Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.644Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.649Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.649Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.682Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.690Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.691Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.707Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.714Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.714Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.733Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.738Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.738Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.751Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.756Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.756Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.771Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.774Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.774Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.787Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.798Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.798Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.817Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.822Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.822Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.847Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.852Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.853Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.882Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:09.885Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.885Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.898Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.904Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.904Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.914Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.919Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.919Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.936Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.941Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.941Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.951Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.957Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.958Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.974Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.979Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:09.979Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:09.991Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.001Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.001Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.013Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.018Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.018Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.045Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.049Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.049Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.063Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.069Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.069Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.078Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.083Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.083Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.097Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.103Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.103Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.114Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.119Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.119Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.137Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.141Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.141Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.152Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.157Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.158Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.169Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.174Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.174Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.205Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.209Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.209Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.216Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.219Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.219Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.238Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.243Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.243Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.254Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.264Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.264Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.275Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.280Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.280Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.292Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.300Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.300Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.310Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.315Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.315Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.333Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.337Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.337Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.368Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.371Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.371Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.379Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.384Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.384Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Last Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.404Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.408Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.408Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Email')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.419Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.428Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.428Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Role in Company')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.442Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.448Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.448Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Address')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.464Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.469Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.469Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Company Name')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.480Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.486Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.486Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//label[contains(.,'Phone')]/following::input[1] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.502Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
-{"level":30,"time":"2025-04-04T19:59:10.508Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.508Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is enabled, find Locator with xpath=//input[@type='submit'] in page."}
-{"level":30,"time":"2025-04-04T19:59:10.536Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
-{"level":30,"time":"2025-04-04T19:59:10.540Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.542Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.543Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.545Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.547Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.549Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.551Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.553Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.556Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active context"}
-{"level":30,"time":"2025-04-04T19:59:10.556Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Changing current active page: page=260fca9f-bcdd-4e91-a79f-0c9e380c15c5"}
-{"level":30,"time":"2025-04-04T19:59:10.556Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active page"}
-{"level":30,"time":"2025-04-04T19:59:10.562Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method closeContext"}
-{"level":30,"time":"2025-04-04T19:59:10.571Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Removed page=3cb2d11b-ac8d-4e07-8b0e-2c6cd46dac69 from context=9cddfd03-1280-41df-942d-c5ea25149374 page stack"}
-{"level":30,"time":"2025-04-04T19:59:10.603Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method closeContext"}
-{"level":30,"time":"2025-04-04T19:59:10.612Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.613Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-04T19:59:10.661Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-04-04T19:59:11.031Z","pid":12052,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-04T20:10:37.484Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-04T20:10:37.578Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-04T20:10:37.579Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-04T20:10:37.579Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-04T20:10:37.599Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-04T20:10:37.600Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-04T20:10:37.609Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active context"}
+{"level":30,"time":"2025-04-04T20:10:37.661Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-04T20:10:37.661Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active page"}
+{"level":30,"time":"2025-04-04T20:10:38.374Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-04T20:10:38.380Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-04T20:10:38.380Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is disabled, return first Locator: xpath=//button[text()='Start'] in page."}
+{"level":30,"time":"2025-04-04T20:10:38.448Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method click"}
+{"level":30,"time":"2025-04-04T20:10:38.452Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-04-04T20:10:38.452Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Strict mode is disabled, return first Locator: xpath=//label[contains(.,'First Name')]/following::input[1] in page."}
+{"level":30,"time":"2025-04-04T20:10:38.469Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method fillText"}
+{"level":30,"time":"2025-04-04T20:10:38.474Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.478Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.479Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.481Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.482Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.484Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.486Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.488Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.493Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active context"}
+{"level":30,"time":"2025-04-04T20:10:38.493Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Changing current active page: page=f0d3dcf5-7214-43cf-a4be-222e1b439897"}
+{"level":30,"time":"2025-04-04T20:10:38.493Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Changed active page"}
+{"level":30,"time":"2025-04-04T20:10:38.499Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-04T20:10:38.503Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Removed page=cc77ccdc-504c-4625-a33a-7907237e6722 from context=11915da6-975e-4fcd-a5bd-9006f1f677b5 page stack"}
+{"level":30,"time":"2025-04-04T20:10:38.504Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-04T20:10:38.510Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.510Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-04T20:10:38.543Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-04T20:10:38.597Z","pid":1408,"hostname":"DESKTOP-NTTVF1L","msg":"End of node method closeAllBrowsers"}
